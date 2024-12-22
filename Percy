@@ -1,0 +1,29 @@
+# Deriv Bot Configuration
+initial_stake = 1  # Initial stake amount
+target_profit = 5   # Target profit
+number_of_runs = 5  # Total number of runs
+current_profit = 0  # Initialize current profit
+runs = 0            # Initialize run counter
+
+# Function to execute a trade
+def execute_trade(stake):
+    # Simulate trade execution (replace with actual trading logic)
+    trade_result = simulate_trade(stake)  # This function should return True for win, False for loss
+    return trade_result
+
+# Main trading loop
+while runs < number_of_runs and current_profit < target_profit:
+    runs += 1
+    trade_result = execute_trade(initial_stake)
+    
+    if trade_result:  # If trade is a win
+        current_profit += initial_stake  # Increase profit by stake amount
+    else:  # If trade is a loss
+        print("Trade lost. Stopping bot.")
+        break  # Stop trading on loss
+
+# Final output
+if current_profit >= target_profit:
+    print("Target profit of $5 reached!")
+else:
+    print("Bot stopped after {} runs with a profit of ${}".format(runs, current_profit))
