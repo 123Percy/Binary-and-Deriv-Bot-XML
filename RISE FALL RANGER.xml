@@ -654,29 +654,5 @@
                     </next>
                   </block>
                 </statement>
-                <statement name="ELSE">
-                  <block type="text_print" id="FnDVIeq!dN/pb9o/HGgt">
-                    <value name="TEXT">
-                      <shadow type="text" id="gR8rYg{8D2F[+oVO$9Il">
-                        <field name="TEXT">.:: MAX MARTI LEVEL ACHIEVED ::.</field>
-                      </shadow>
-                    </value>
-                  </block>
-                </statement>
-              </block>
-            </statement>
-            <statement name="ELSE">
-              <block type="text_print" id="ED/6*nPSDPIzRs[Wv+H}">
-                <value name="TEXT">
-                  <shadow type="text" id="*3)~`BysyYYd`=T]eJ1|">
-                    <field name="TEXT">.:: STOP LOSS ACHIEVED ::.</field>
-                  </shadow>
-                </value>
-              </block>
-            </statement>
-          </block>
-        </statement>
-      </block>
-    </statement>
-  </block>
+                
 </xml>
